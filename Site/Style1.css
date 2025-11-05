@@ -1,0 +1,647 @@
+/* FIRST SLIDE *//* FIRST SLIDE *//* FIRST SLIDE *//* FIRST SLIDE *//* FIRST SLIDE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #18161b; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+/* HEADER */
+h1 {
+  color:#e7e7dd;
+  font-family: "Press Start 2P", monospace;
+  font-weight: bold;
+  border-bottom: 3px outset #66453f;
+  width: fit-content;
+  padding-bottom: 5px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.box1{
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border: 4px solid #BABA9E;
+  padding: 10px;
+  margin: 10px;
+  position: absolute;
+  top: 260px;
+  right: 40px;
+  z-index: -1; 
+  border: none;
+  background: linear-gradient(to top, #1C2D2A, #1C2D2A, rgba(255, 255, 255, 0.178));
+  
+  width: 90vw;   /* 90% of viewport width */
+  height: 58vh;  /* 40% of viewport height */
+  max-width: 1400px;
+  min-width: 320px;
+} 
+@media (max-width: 768px) {
+  .box1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 95vw;
+    height: auto;
+      z-index: 1; 
+  }
+}
+
+nav a {
+  background: linear-gradient(#2ee6de);    /*  BUTTONS ABTME GAL PRO CON  */
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  color: rgb(0, 0, 0);
+  font-weight: 30px;
+  font-size: 40px;
+  box-shadow: 5px 5px 10px #ffffff00;
+  padding: 12px 25px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.2s, background-color 0.2s
+  
+  
+  
+}
+.nickname{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press start 2P";
+  color: white;
+
+}
+/* 
+brightest: #e1e0db
+Brightest blue: #ccf3f2
+Brighter blue: #2ee6de
+bright blue #0b89af
+pine???              #1C2D2A
+darker blue #005d8d
+darkest: #18161b
+*/
+
+/* SPACER  SPACING BETWEEN TEXTS */
+.spacer {
+  height: 100px;
+}
+.spacer2{ 
+  height: 20px;
+}
+
+/* MAIN IMAGE / border of pfp */
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  position: relative;
+  
+}
+/* Profilepicture  */
+.image img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #000000;
+  ;
+}
+
+/* BUTTON */
+button {
+  display: none; /* block to work*/
+  color: white;
+  background-color: black;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  min-height: 70px;
+  min-width: 120px;
+  margin: 20px auto 80px auto;
+  border-width: 5px;
+  border-color: rgb(165, 42, 118);
+  border-radius: 10px;
+  transition: 0.2s ease;
+
+}
+
+button:hover {
+  color: rgb(205, 47, 47);
+  background-color: #222;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+/* SECTIONS */ /* SECTIONS */ /* SECTIONS */ /* SECTIONS */ /* SECTIONS *//* SECTIONS */ /* SECTIONS */ /* SECTIONS */ 
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#about h2,
+/* about me section */
+#about p,
+
+#projects p {
+  color: #18161b;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-top: 60px;
+  text-align: left;
+  background-color: #ccf3f2;
+  padding-left: 30px;
+  position: relative;
+/* 
+brightest: #e1e0db
+Brightest blue: #ccf3f2
+Brighter blue: #2ee6de
+bright blue #0b89af
+pine???              #1C2D2A
+darker blue #005d8d
+darkest: #18161b
+*/
+  
+}
+ /*aboutmesect */
+#abtme{
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #000000;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 1000;
+  max-width: 800px; 
+  position: relative; top: 140px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+background: #2ee6de;
+  border: 0px #00000000;
+  border-radius: 10px;
+border-style: outset;
+  display: block; width: fit-content;
+  margin: 40px auto;/
+  
+}
+.txt {
+  color: rgb(7, 35, 4);
+  font-weight: bold;
+}
+.boxofbox {
+  display: flex;           /* aligns boxes in a row */
+  justify-content: center; /* centers the group horizontally */
+  gap: 5px;               /* space between the boxes */
+  margin-top: 50px;        /* optional */
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  position: relative;;
+  top: 20px; 
+  
+}
+
+.box2{
+border-width: 60px;
+  border-radius: 10%;
+  width: 600px;
+  height: 592px;
+  bottom: 45px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  display: block;           /* centers text inside */
+  align-items: center;
+  justify-content: center;
+
+     
+}
+.artskill {
+position:relative;
+bottom: 30px;
+font-size: 31px;
+font-weight: 600p;
+letter-spacing: 2px;
+}
+
+#projects h2,
+
+
+#contact h2 {   /*PROJECTS */
+  font-size: 3.0rem;
+  background-color: #2ee6de;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  color: #000000;
+  position: relative; bottom: 90px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* GALLERY */
+/* GALLERY SECTION TITLE */
+#gallery p {
+  color: aliceblue;
+  font-family: "Press Start 2P", monospace;
+  font-weight: bold;
+  border-bottom: 3px outset #2ee6de;
+  width: fit-content;
+  padding-bottom: 5px;
+  margin: 25px auto;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  position: relative;
+  bottom: 112px; 
+}
+#gallery
+
+#digitalart{
+  position: relative;
+  display: flex;
+  bottom:115px;
+  font-size: 2.0rem;
+   width: 70vw;   /* 90% of viewport width */
+  height: 4vh;  /* 40% of viewport height */
+  max-width: 1400px;
+  min-width: 320px;
+}
+/* GALLERY CONTAINER */
+.image1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;              /* allows new rows */
+  gap: 20px;                   
+  position: relative; 
+  bottom: 190px;
+  max-width: 1200px;            /* keeps gallery centered */
+  margin: 0 auto;               /* centers horizontally */
+
+}
+
+/* IMAGES */
+.image1 img {
+  height: 270px;
+  width: auto;
+  border: 8px solid #e1e0db;
+  border-radius: 10px;
+  object-fit: cover;    
+  transition: transform 0.3s ease;
+}
+
+.image1 img:hover {
+  transform: scale(1.05);       /* hover zoom */
+}
+
+.image2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;              /* allows new rows */
+  gap: 20px;                   
+  position: relative;
+  max-width: 1200px;      
+  bottom: 510px;      /* keeps gallery centered */
+  margin: 0 auto;               /* centers horizontally */
+  padding: 30px;
+}
+/* IMAGES */
+.image2 img {
+  height: 300px;
+  margin: 15px;
+  width: auto;
+  border: 8px solid #e1e0db;
+  border-radius: 8px;
+  object-fit: cover;            /* good scaling */
+  transition: transform 0.3s ease;
+   
+}
+
+.image2 img:hover {
+  transform: scale(1.05);       /* hover zoom */
+}
+.projectss{ 
+  position: relative;
+max-width: 1200;
+}
+#projects {
+  position: relative;
+  transform: translateY(-620px);
+}
+
+@media (max-width: 768px) {
+  #projects {
+    transform: translateY(-80px);
+  }
+}
+
+
+
+
+/* CONTACT SECTION */
+.cont {
+  color: #66453f;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: #2ee6de;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #000000;
+  max-width: 1200px;            /* keeps gallery centered */
+  margin: 0 auto;               /* centers horizontally */
+  position: relative;  
+  font-family: 'Courier New', Courier, monospace;
+  top: 40px;
+
+}
+
+.socials2 {
+  background-color: #2ee6de;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 20px auto;
+  padding: 10px;
+  padding-left: 30px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  margin-bottom: 30px; 
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+.socials2 i {
+  margin-right: 1px;
+  margin-top: 5px;
+  margin-bottom: 15;
+  
+}
+.socials2 
+
+.nav-buttons {
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  margin-top: 50px;
+  margin-right: 50px; 
+  position: absolute;
+}
+
+.nav-buttons button {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 3px solid #751a1a;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.2s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #222;
+  color: #c25a48;
+}
+
+.nav-buttons button:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 1.6rem;
+    margin: 20px;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+
+  .image img {
+    height: 220px;
+    width: 220px;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+
+  .image1 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .socials2 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 80%;
+    text-align: center;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  #about p {
+    text-align: center;
+  
+  }
+
+  .image1 {
+    flex-direction: column;
+    
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .image1 {
+    flex-direction: column;     /* stack vertically */
+    gap: 15px;
+    bottom: 80px;               /*offsets for mobile */
+  }
+
+  .image1 img {
+    width: 90%;                 
+    height: auto;               
+    border-width: 6px;
+  }
+
+  .image2 {
+    flex-direction: column;     /* stack vertically */
+    gap: 30px;
+    bottom: 00px;               /*offsets for mobile */
+    position: relative;
+  }
+
+  .image2 img {
+    width: 90%;                 
+    height: auto;               
+    border-width: 6px;
+  }
+  
+  #gallery p {
+    font-size: 0.9rem;         
+    position: relative;
+    top: 0;                   
+    bottom: 0;                  
+    width: 90vw;              
+    height: auto;
+    margin: 20px auto;          
+    text-align: center;
+    line-height: 1.4;          
+    word-wrap: break-word;     
+  }
+}
+
+  
+  #projects {
+    margin: 40px auto 80px auto; /* smaller spacing on smaller screens */
+  }
+  
+
+/* --- Responsive Adjustments for Phones --- */
+@media (max-width: 768px) {
+
+  /* Stack boxes vertically instead of in a row */
+  .boxofbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;       /* more breathing room between boxes */
+    margin-top: 20px;
+  }
+
+  /* Adjust each box size and spacing */
+  .box2 {
+    width: 90%;          
+    height: auto;   
+    margin: 0 auto;        
+    padding: 15px;
+    bottom: 0;             
+  }
+
+  /* Make the lists inside more readable on phones */
+  .artskill {
+    font-size: 20px;
+    line-height: 1.4;
+    bottom: 0;            
+    text-align: left;
+  }
+
+  /* Make headers slightly smaller */
+  .artskill h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Optional: soften text and spacing on mobile */
+  .artskill li {
+    margin-bottom: 6px;
+  }
+}
+
+/* NAVIGATION /// BACKGROUND - animations, muscles/ movement towards the page */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+
+
+nav a:hover {
+  transform: scale(1.05);
+  background-color: rgba(212, 74, 72, 0.2);
+}
+
+/* 
+ MOSS -  (#BABA9E);
+ OLIVE - (#6b765c);
+ FOREST  (#3B4A38);
+ PINE -  (#1C2D2A);
+ CHARCOA-(#0E1719);
+*/
+
+/* --- DESKTOP DEFAULT --- */
+/* --- DESKTOP DEFAULT --- */
+.box3 {
+  position: absolute;
+  top: 1445px;                 /* stays lower on desktop */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 90vw;
+  height: 20vh;
+  max-width: 1400px;
+
+  background-color: #2ee6de;
+  border-bottom: 160px solid #18161b;
+  border-radius: 60%;
+
+  z-index: -1;
+}
+
+/* --- MOBILE VIEW (below 768px) --- */
+@media (max-width: 768px) {
+  .box3 {
+    position: absolute;         /* keeps it layered visually */
+    top: 2380px;                 /* adjust this value to move it higher or lower */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 95vw;
+    height: 15vh;
+    border-bottom: 80px solid #18161b;
+    border-radius: 50%;
+  }
+}
